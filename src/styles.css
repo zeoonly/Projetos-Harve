@@ -1,0 +1,99 @@
+.container{
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background-image: url(https://st2.depositphotos.com/3536505/7405/i/600/depositphotos_74059205-stock-photo-new-english-street-view.jpg;);
+background-position: center;
+background-size: cover;
+}
+
+.blur{
+    background: #ffffff10;
+    border: 15px solid #ffffff30;
+    border-radius: 20px;
+    backdrop-filter: blur(30px);
+}
+
+.title{
+background-color: black;
+color: white;
+border: 15px solid black;
+border-radius: 20px;
+font-size: 50px;
+}
+
+.containerInput{
+background-color: black;
+padding: 12px;
+margin: 34px 0;
+display: flex;
+border-radius: 8px;
+box-shadow: 1px 3px 8px rgba(black);
+}
+
+.containerInput input{
+background-color: transparent;
+border: 0;
+font-size: 15px;
+color: white;
+outline: none;
+margin-right: 160px;
+}
+
+.containerInput input::placeholder{
+color: white;   
+}
+
+.buttonSearch{
+background-color: transparent;
+border:0;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+transition: transform 0.5s;
+}
+
+.buttonSearch:hover{
+transform: scale(1.2);    
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    width: 400px;
+    border-radius: 8px;
+}
+
+.main span{
+margin-bottom: 16px;
+color: white;
+font-weight: bold;
+}
+
+.main h2{
+margin: 16px 0;
+font-size: 28px;    
+color: white;
+}
+
+@media (max-width: 620px) {
+    .title{
+        font-size: 30px;
+    }
+
+    .main h2{
+        font-size: 20px;
+    }
+    
+    .main{
+        width:100%;
+        min-height: 350px;
+    }
+    
+}
